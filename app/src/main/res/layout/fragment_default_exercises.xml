@@ -1,0 +1,41 @@
+<FrameLayout android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/menu"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:id="@+id/title_create_training"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/default_exercises"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/title_create_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:id="@+id/recyclerView">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

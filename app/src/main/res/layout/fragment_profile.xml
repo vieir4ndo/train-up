@@ -1,0 +1,145 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp"
+        android:layout_marginTop="60sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="150sp"
+            android:layout_gravity="center"
+            android:layout_height="150sp"
+            android:src="@drawable/ic_default_profile"/>
+
+        <TextView
+            android:labelFor="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/name_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/login_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="text"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:labelFor="@+id/edit_text_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/surname_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_surname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="text"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:labelFor="@id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/email"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:labelFor="@id/edit_text_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/phone_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="phone|number"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/save_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/btn_rounded_no_border"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_rounded_border"
+            android:drawablePadding="50sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/logout"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/main_color_button_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+</FrameLayout>

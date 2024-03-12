@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_color"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:contentDescription="@string/app_title"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/ops_error"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/mail_already_registered"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/btn_rounded_no_border"
+        android:drawablePadding="50sp"
+        android:text="@string/ok"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_rounded_border"
+        android:drawablePadding="50sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/return_message"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/main_color_button_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

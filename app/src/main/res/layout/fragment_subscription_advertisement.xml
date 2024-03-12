@@ -1,0 +1,137 @@
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_above="@+id/menu">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20sp"
+    android:paddingRight="20sp"
+    android:layout_marginTop="60sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/share"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40sp"
+        android:layout_height="250sp"
+        android:orientation="vertical"
+        android:background="@drawable/login_form_background"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp">
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/free_title"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/free_description_line1"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/free_description_line2"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/free_description_line3"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/free_description_line4"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/become_member"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40sp"
+        android:layout_height="250sp"
+        android:orientation="vertical"
+        android:background="@drawable/login_form_background"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/member_title"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/member_description_line1"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/member_description_line2"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

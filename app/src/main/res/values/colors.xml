@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#fccc04</color>
+    <color name="main_color_button_text">#fcd933</color>
+    <color name="main_menu_icon_color">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_grey">#6c6c6c</color>
+    <color name="white_background">#fafafa</color>
+    <color name="text">#413e3f</color>
+    <color name="editable_text">#adadad</color>
+    <color name="fail_color">#e01212</color>
+    <color name="exercise_forms">#dadada</color>
+</resources>

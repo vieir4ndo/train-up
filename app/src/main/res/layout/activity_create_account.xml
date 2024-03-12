@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/create_account_upper_banner"
+            />
+
+        <ImageView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="110sp"
+            android:layout_marginRight="110sp"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/app_title" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10sp"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/welcome_create"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/name_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/name_create_hint"
+            android:inputType="text"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/surname_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_surname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/surname_create_hint"
+            android:inputType="text"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/email"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/phone_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/phone_create_hint"
+            android:inputType="phone|number"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/password"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/create_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/privacy_info"
+            android:textColor="@color/text" />
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/btn_rounded_no_border"
+            android:drawablePadding="50sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/create_account"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/existing_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_rounded_border"
+            android:drawablePadding="50sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/existing_account"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/main_color_button_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

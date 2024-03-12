@@ -1,0 +1,134 @@
+<FrameLayout android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="40sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/edit_exercise"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_below="@id/textView40"
+            android:labelFor="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/name_create"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:layout_below="@+id/label_name"
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/login_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="text"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp"
+            android:padding="10sp"
+            android:hint="@string/exercise_name_hint"/>
+
+        <TextView
+            android:id="@+id/label_description"
+            android:layout_below="@id/edit_text_name"
+            android:labelFor="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/description"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:layout_below="@+id/label_description"
+            android:id="@+id/edit_text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10sp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/login_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="text"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp"
+            android:hint="@string/exercise_description_hint"/>
+
+        <LinearLayout
+            android:layout_below="@id/edit_text_description"
+            android:id="@+id/image_container"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="@drawable/upload_image_container"
+            android:layout_marginTop="10sp">
+            <ImageView
+                android:id="@+id/imageViewCreate"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/image_default"
+                android:layout_height="150sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label_duration"
+            android:layout_below="@id/image_container"
+            android:labelFor="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="10sp"
+            android:text="@string/duration"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:layout_below="@+id/label_duration"
+            android:id="@+id/edit_text_duration"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_text_field_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="number"
+            android:textColor="@color/editable_text"
+            android:textSize="14sp"
+            android:padding="10sp"
+            android:hint="@string/duration_hint"/>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/save"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="20sp"
+            android:layout_gravity="center"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="@drawable/ic_check"/>
+    </RelativeLayout>
+</FrameLayout>

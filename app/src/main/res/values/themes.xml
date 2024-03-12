@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Trainup" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+
+    <style name="DialogAnimation" >
+        <item name="android:windowEnterAnimation">@anim/slide_in_top_sheet_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top_sheet_dialog</item>
+    </style>
+</resources>
