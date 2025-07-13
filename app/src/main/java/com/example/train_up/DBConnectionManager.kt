@@ -14,7 +14,7 @@ class DBConnectionManager{
         val properties = Properties()
         properties["useSSL"] = "false"
         properties["user"] ="vieir4ndo"
-        properties["password"] = "12345678"
+        properties["password"] = "********"
 
         Class.forName("com.mysql.jdbc.Driver")
 
